@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brant Yadi Cordova's Portfolio</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+<div class="navbar">
+    <div class="navbar-container">
+        <ul class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</div>
+
+        <!-- Home -->
+        <div class="home-container container" id="home">
+        <div class="home-icon"> 
+            <img src="assets/profile.jpeg" alt="Profile Picture">
+            <h2>Hello I'm</h2>
+            <h1>Brant Yadi Cordova</h1>
+            <h2>Welcome to my Portfolio!</h2>
+        </div>
+
+        <br>
+        <div class="social">
+            <a href="https://www.facebook.com/Cordova26" target="_blank">
+                <img src="assets/facebook.png" alt="facebook" width="50">
+            </a>
+            <a href="https://m.me/Cordova26" target="_blank">
+                <img src="assets/messenger.png" alt="GitHub" width="50">
+            </a>
+        </div>
+        
+        <br>
+        <div class="view-code">
+            <a href="https://github.com/yadime/Portfolio" class="code-button" target="_blank" rel="noopener noreferrer">View Code</a>
+        </div>
+        
+        <div class="cv-container">
+            <a href="assets/download.pdf" class="cv-button" download>Download CV</a>
+        </div>
+    </div>
+    
+
+
+
+    <!-- About -->
+    <div class="about-container container" id="about">
+        <img src="assets/aboutme3.png" alt="About ME" width="150">
+        <h1>About Me</h1>
+
+        <div class="about-img">
+            <img src="assets/aboutme2.jpg" alt="About ME" width="250"> 
+        </div>
+
+        <br>
+        <div class="about-description">
+            <h2>I'm an aspiring young man, finding my specialty in web developing in this ever changing technological profession.</h2>
+            <h2>Currently 20 years old.</h2>
+            <h2>I love cycling.</h2>
+        </div>
+
+        <br><br>
+    </div>
+
+    <br>
+
+    <!-- Education -->
+    <div class="education-container container" id="education">
+        <img src="assets/education.png" alt="education" width="150">
+        <h1>Education</h1>
+        <br>
+        <h3>Currently 3rd year at Cavite State University Bacoor in Bachelor of Computer Science.</h3>
+        <br>
+    </div>
+
+    <br>
+
+    <!-- Skills -->
+    <div class="skills-container container" id="skills">
+        <img src="assets/skills.png" alt="skill" width="150">
+        <h1>Skills</h1>
+        
+        <img src="assets/skills1.png" alt="About ME" width="90">
+        <br><img src="assets/skills2.png" alt="About ME" width="90">
+        <br> <img src="assets/skills5.png" alt="About ME" width="90">
+        <br>
+        
+        <br>
+    </div>
+
+
+    <!-- Projects -->
+    <div class="projects-section container" id="projects">
+        <img src="assets/works.png" alt="projects" width="150">
+        <h1>Projects</h1>
+        
+        <div class="projects-list">
+           <!-- Projects items -->
+            <div class="project-card">
+                <img src="assets/works1.png" alt="Youth Saver" width="100">
+                <h2>Youth Saver</h2>
+                <a href="https://github.com/yadime/Youth-Saver.git" target="_blank" class="github-icon">
+                    <img src="assets/github.png" alt="GitHub" width="50">
+                </a>
+                <p>System that aims to help distressed/troubled students.</p>
+            </div>
+    
+            <div class="project-card">
+                <img src="assets/works2.png" alt="Monster.io" width="100">
+                <h2>Monster.io</h2>
+                <a href="https://github.com/yadime/Monster.io.git" target="_blank" class="github-icon">
+                    <img src="assets/github.png" alt="GitHub" width="50">
+                </a>
+                <p>A simple infinite run and jump game that is visually appealing to younger audiences.</p>
+            </div>
+        
+            <div class="project-card">
+                <img src="assets/works3.png" alt="CVSU Checklist" width="100">
+                <h2>CVSU Checklist</h2>
+                <a href="https://github.com/yadime/checklist.git" target="_blank" class="github-icon">
+                    <img src="assets/github.png" alt="GitHub" width="50">
+                </a>
+                <p>A student checklist that helps keep track of their courses and units.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- Contacts -->
+    <div class="contacts-container container" id="contacts">
+        <img src="assets/gmail.png" alt="GitHub" width="100">
+        <h1>Contacts</h1>
+        <h2>brantcordova0@gmail.com</h2>
+       
+        <!-- Contacts-Message -->
+        <div class="message">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2542a2fb-25e2-4006-8baf-a593c82e8e44" />
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+            <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+        <h2>Contact number: +639568559280</h2>
+        <img src="assets/phone.png" alt="GitHub" width="50"><br><br><br>
+
+        <h2>Facebook</h2>
+        <a href="https://www.facebook.com/Cordova26" target="_blank">
+            <img src="assets/facebook.png" alt="GitHub" width="50">
+        </a><P>Click this icon</P><br>
+
+        <h2>Messenger</h2>
+        <a href="https://m.me/Cordova26" target="_blank"><img src="assets/messenger.png" alt="GitHub" width="50"></a>
+        <p>Click this icon</p><br><br>
+    </div>
+
+    <script>
+       
+        const menuIcon = document.querySelector('.menu-icon');
+        const navbarLinks = document.querySelector('.navbar-links');
+        const navLinks = document.querySelectorAll('.navbar-links li a');
+        
+        // Function to toggle navbar visibility
+        const toggleNavbar = () => {
+            navbarLinks.classList.toggle('active'); // Toggle visibility of links
+            menuIcon.classList.toggle('active'); // Toggle animation on hamburger
+        };
+        
+        // Toggle the navbar when the menu icon is clicked
+        menuIcon.addEventListener('click', toggleNavbar);
+        
+        // Close the navbar when any link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbarLinks.classList.remove('active'); // Hide the links
+                menuIcon.classList.remove('active'); // Reset the hamburger icon
+            });
+        });
+        
+        // Close the navbar if the user clicks outside of it
+        document.addEventListener('click', (event) => {
+            // Check if the click was outside the navbar and menu icon
+            if (!navbarLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+                navbarLinks.classList.remove('active');
+                menuIcon.classList.remove('active');
+            }
+        });
+        
+        // Intersection Observer for visibility detection
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                // If the container is in view
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.5  // Trigger when 50% of the element is in view
+        });
+        
+        // Observe each container with the 'container' class
+        document.querySelectorAll('.container').forEach(container => {
+            observer.observe(container);
+        });
+        
+    </script>
+    
+    
+</body>
+</html>
