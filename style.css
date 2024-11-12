@@ -6,7 +6,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 80px; /* Adjust this value based on your navbar height */
-    background-color: #f0f0f0;
+    background-color:#eaeaea;
 }
 
 p {
@@ -373,6 +373,7 @@ p {
 }
 
 
+/* Education Container */
 .education-container {
     text-align: center;
     margin: 80px auto;
@@ -401,6 +402,52 @@ p {
     margin: 15px auto 0;
     border-radius: 2px;
     background-color: #f0a500;
+}
+
+/* Timeline Container */
+.timeline-item {
+    position: relative;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    border-left: 2px solid #f0a500;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: left;
+}
+
+.timeline-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.timeline-item p.timeline-date {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 0.5em;
+    width: 12px;
+    height: 12px;
+    background-color: #f0a500;
+    border-radius: 50%;
+}
+
+/* Alternating Timeline Items */
+.timeline-item:nth-child(odd) {
+    padding-left: 3em;
+    padding-right: 1em;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: 1em;
+    padding-right: 3em;
 }
 
 
@@ -455,7 +502,15 @@ p {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-
+.projects-section h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 15px auto 0;
+    border-radius: 2px;
+    background-color: #f0a500;
+}
 
 .projects-list {
     display: flex;
@@ -516,19 +571,21 @@ p {
     }
 
     .projects-section h1 {
-        font-size: 1.5rem;
+        font-size: 2.8em;
+        color: #2c3e50;
+        margin-bottom: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 1.3;
     }
+    
 }
 
 @media screen and (max-width: 480px) {
     .projects-section {
         padding: 15px;
     }
-
-    .projects-section h1 {
-        font-size: 1.2rem;
-    }
-
     .project-card {
         max-width: 100%;
         padding: 15px;
